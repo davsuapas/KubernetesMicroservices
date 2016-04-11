@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: turbine
+spec:  
+  containers:
+  - name: turbine
+    image: "elipcero/turbineservice"
+    ports:
+        - containerPort: 8989

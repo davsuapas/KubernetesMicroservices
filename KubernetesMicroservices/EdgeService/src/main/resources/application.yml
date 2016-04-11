@@ -1,0 +1,24 @@
+server:
+  port: 8765
+
+spring:
+  application:
+    name: edge
+
+info:
+  component: Zuul Server
+
+zuul:
+  ignoredServices: "*"
+  routes:
+    orders:
+      path: /orders/**
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://${DISCOVERY_SERVICE_HOST}:${DISCOVERY_SERVICE_PORT}/eureka/   
+
+

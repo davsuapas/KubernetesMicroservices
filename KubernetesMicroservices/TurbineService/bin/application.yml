@@ -1,0 +1,30 @@
+server:
+  port: 8989
+
+management:
+  port: 8990
+  
+spring:
+  application:
+    name: turbine
+  rabbitmq: 
+    host: ${RABBITMQ_SERVICE_HOST}
+    username: guest
+    password: guest
+      
+
+info:
+  component: Turbine
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+    
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://${DISCOVERY_SERVICE_HOST}:${DISCOVERY_SERVICE_PORT}/eureka/

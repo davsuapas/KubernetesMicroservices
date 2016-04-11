@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: discovery
+  labels:
+    name: discovery
+spec:  
+  containers:
+  - name: discovery
+    image: "elipcero/discoveryservice"
+    ports:
+      - containerPort: 8761

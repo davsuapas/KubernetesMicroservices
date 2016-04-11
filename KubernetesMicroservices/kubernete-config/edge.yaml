@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: edge
+spec:  
+  containers:
+  - name: edge
+    image: "elipcero/edgeservice"
+    ports:
+        - containerPort: 8765

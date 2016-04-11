@@ -1,0 +1,16 @@
+jar {
+    baseName = 'TurbineService'
+    version = '0.0.1-SNAPSHOT'
+}
+
+group = 'elipcero'
+applicationName = 'turbineservice'
+
+mainClassName = 'com.elipcero.demo.kubernetes.microservice.TurbineServiceApplication'
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-undertow")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile('org.springframework.cloud:spring-cloud-starter-turbine-amqp')
+    compile('com.netflix.turbine:turbine-core:2.0.0-DP.2')
+}

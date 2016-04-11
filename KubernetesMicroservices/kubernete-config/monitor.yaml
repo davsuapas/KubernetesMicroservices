@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: monitor
+spec:  
+  containers:
+  - name: monitor
+    image: "elipcero/monitorservice"
+    ports:
+        - containerPort: 7979

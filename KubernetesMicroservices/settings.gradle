@@ -1,0 +1,6 @@
+include "DiscoveryService"
+include "EdgeService"
+include "TurbineService"  
+include "MonitorService"
+include "OrderService"
+include "OrderLineService"

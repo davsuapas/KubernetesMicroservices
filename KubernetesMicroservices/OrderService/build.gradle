@@ -1,0 +1,20 @@
+jar {
+    baseName = 'OrderService'
+    version = '0.0.1-SNAPSHOT'
+}
+
+group = 'elipcero'
+applicationName = 'orderservice'
+
+mainClassName = 'com.elipcero.demo.kubernetes.microservice.OrderServiceApplication'
+
+dependencies {
+    compile("org.springframework.cloud:spring-cloud-starter-hystrix")
+    compile("org.springframework.cloud:spring-cloud-starter-eureka")
+    compile("org.springframework.cloud:spring-cloud-starter-bus-amqp")
+    compile("org.springframework.cloud:spring-cloud-netflix-hystrix-amqp")
+    
+    compile project(':OrderLineService')
+}
+
+

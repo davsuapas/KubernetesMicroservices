@@ -1,0 +1,13 @@
+jar {
+    baseName = 'MonitorService'
+    version = '0.0.1-SNAPSHOT'
+}
+
+group = 'elipcero'
+applicationName = 'monitorservice'
+
+mainClassName = 'com.elipcero.demo.kubernetes.microservice.MonitorServiceApplication'
+
+dependencies {
+    compile('org.springframework.cloud:spring-cloud-starter-hystrix-dashboard')
+}

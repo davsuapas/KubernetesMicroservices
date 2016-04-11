@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: orderline
+  labels:
+    name: orderline
+spec:
+  replicas: 1
+  selector:
+    name: orderline
+  template:
+    metadata:
+      labels:
+        name: orderline
+    spec:
+      containers:
+      - name: orderline
+        image: "elipcero/orderlineservice"
+        ports:
+            - containerPort: 8080

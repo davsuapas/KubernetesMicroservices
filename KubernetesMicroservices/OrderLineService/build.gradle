@@ -1,0 +1,13 @@
+jar {
+    baseName = 'OrderLineService'
+    version = '0.0.1-SNAPSHOT'
+}
+
+group = 'elipcero'
+applicationName = 'orderlineservice'
+
+mainClassName = 'com.elipcero.demo.kubernetes.microservice.OrderLineServiceApplication'
+
+dependencies {
+    compile('org.springframework.cloud:spring-cloud-starter-eureka')
+}

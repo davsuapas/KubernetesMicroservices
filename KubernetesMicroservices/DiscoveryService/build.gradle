@@ -1,0 +1,13 @@
+jar {
+    baseName = 'DiscoveryService'
+    version = '0.0.1-SNAPSHOT'
+}
+
+group = 'elipcero'
+applicationName = 'discoveryservice'
+
+mainClassName = 'com.elipcero.demo.kubernetes.microservice.DiscoveryServiceApplication'
+
+dependencies {
+    compile('org.springframework.cloud:spring-cloud-starter-eureka-server')
+}

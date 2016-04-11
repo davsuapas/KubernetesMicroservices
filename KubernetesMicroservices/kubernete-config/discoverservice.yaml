@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: discovery
+spec:
+  selector:
+    name: discovery  
+  ports:
+    - port: 8761

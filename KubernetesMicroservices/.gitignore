@@ -1,0 +1,20 @@
+# Java Files #
+*.class
+
+# Package Files #
+# *.jar, we need to checkin gradle/wrapper/gradle-wrapper.jar
+*.war
+*.ear
+
+# Eclipse files #
+.settings
+.classpath
+.project
+
+# Gradle files #
+.gradle
+build
+
+target
+logs
+data
